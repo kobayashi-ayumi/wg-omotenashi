@@ -1,0 +1,7 @@
+#for PHP CLI
+<FilesMatch ".">
+  AuthType Basic
+  AuthName "Staff only"
+  AuthUserFile /data/home/a-kobayashi/.htpasswd
+  Require user a-kobayashi
+</FilesMatch>
