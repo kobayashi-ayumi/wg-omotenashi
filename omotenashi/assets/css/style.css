@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+img{
+	border:none;
+}
+
+html{
+	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 17px;
+}
+
+/* 全体にかかる
+----------------------------------------------------------- */
+body{
+	/*margin-left: 40px;*/
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 20px;
+}
+
+
+/* ヘッダー
+----------------------------------------------------------- */
+.header_inner{
+	position: relative;
+	height: 35vh;
+	max-height: 600px;
+	min-height: 500px;
+	position: relative;
+}
+.header_logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.header_logo img{
+}
+.header_hello{
+	background-image: url("../images/hello.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 0;
+	position: absolute;
+	top:0;
+	right: 0;
+	text-indent: -9999px;
+	height: 385px;
+	width: 156px;
+}
+
+.header_menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header_menu ul li{
+	list-style: none;
+	margin: 0 12px;
+	display: inline-block;
+	vertical-align: top;
+}
+@media screen and (max-width: 700px){
+	.header_hello{
+		height: 192px;
+		width: 78px;
+	}
+	.header_menu {
+		position: absolute;
+		top: 300px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+/* 説明
+----------------------------------------------------------- */
+#setsumei{
+	height: 25vh;
+	margin-top: 10px;
+	width: 100%;
+}
+.tate_setsumei p{
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	line-height: 2.5;
+	margin: 0 auto;
+	font-size: 19px;
+}
+	@media screen and (max-width: 500px){
+		.tate_setsumei p{
+			line-height: 2;
+			font-size: 17px;
+		}
+	}
+
+/* mainvisual
+----------------------------------------------------------- */
+.mainvisual{
+	margin: 0 auto;
+	max-width: 50%;
+}
+	@media screen and (max-width: 640px){
+		.mainvisual{
+			margin: 0 auto;
+			max-width: 100%;
+		}
+	}
+
+.mainvisual img{
+	width: 100%;
+}
+	@media screen and (max-width: 640px){
+		.mainvisual img{
+			max-width: 500px;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+
+/* 喜び
+----------------------------------------------------------- */
+@media screen and (max-width: 700px){
+.wrap-all {
+	width: 100%; margin:0 auto;
+ }
+}
+
+/* 全感情共通になってます。 */
+.wrap, .wrap .text-box {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+
+/* 感情の箱の共通部分
+========================================================*/
+.wrap{
+	max-width: 960px;
+ 	margin: 0 auto;
+}
+.wrap, .wrap img {
+	width: 100%;
+ }
+/* 写真の方の幅 */
+.wrap .photo-box {
+	width: 50%;
+}
+	@media screen and (max-width:700px) {
+		.wrap .photo-box {
+			width: 100%;
+		}
+	}
+
+/* テキストの方の幅 */
+.wrap .text-box {
+	width: 50%;
+}
+	@media screen and (max-width:700px) {
+		.wrap .text-box {
+			width: 100%;
+		}
+	}
+
+
+
+/* テキスト箱のテキスト部分 */
+.wrap .text-box .tate {
+	width: 60%;
+	height: 40%;
+	line-height: 2.5;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+ }
+/* テキスト箱の環状部分 */
+.wrap .text-box .menu {
+	width: 40%;
+}
+
+/* ボタンの部分 [PC表示] */
+.wrap .text-box .btn_pc {
+	width: 100%;
+	text-align: center;
+}
+	@media screen and (max-width:700px) {
+		.wrap .btn_pc {
+			display: none;
+		}
+	}
+
+/* ボタンの部分 [SP表示] */
+.wrap .btn_sp {
+	display: none;
+}
+	@media screen and (max-width:700px) {
+		.wrap .btn_sp {
+			display: block;
+		}
+	}
+
+
+/* 喜
+========================================================*/
+#joy {
+	padding-top: 50px;
+}
+#joy.wrap .photo-box {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+#joy.wrap .text-box {
+	-webkit-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+@media screen and (max-width:700px) {
+#joy.wrap .photo-box {
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 2;
+   order: 2;
+ }
+}
+@media screen and (max-width:700px) {
+#joy.wrap .text-box {
+   -webkit-box-ordinal-group: 1;
+   -ms-flex-order: 1;
+   order: 1;
+ }
+}
+
+/* 怒
+========================================================*/
+#angry {
+	padding-top: 50px;
+}
+#angry.wrap .photo-box {
+}
+#angry.wrap .text-box {
+}
+#angry.wrap .text-box .tate {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	order: 2;
+ }
+#angry.wrap .text-box .menu {
+	-webkit-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+#angry.wrap .text-box .btn_pc {
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 3;
+	order: 3;
+}
+@media screen and (max-width:700px) {
+#angry.wrap .photo-box {
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 2;
+   order: 2;
+ }
+}
+@media screen and (max-width:700px) {
+#angry.wrap .text-box {
+   -webkit-box-ordinal-group: 1;
+   -ms-flex-order: 1;
+   order: 1;
+ }
+}
+
+/* 哀
+========================================================*/
+#sad {
+	padding-top: 50px;
+}
+#sad.wrap .photo-box {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+#sad.wrap .text-box {
+	-webkit-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+
+@media screen and (max-width:700px) {
+#sad.wrap .photo-box {
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 2;
+   order: 2;
+ }
+}
+@media screen and (max-width:700px) {
+#sad.wrap .text-box {
+   -webkit-box-ordinal-group: 1;
+   -ms-flex-order: 1;
+   order: 1;
+ }
+}
+
+/* 楽
+========================================================*/
+#fun {
+	padding-top: 50px;
+}
+#fun.wrap .photo-box {
+}
+#fun.wrap .text-box {
+}
+#fun.wrap .text-box .tate {
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+#fun.wrap .text-box .menu {
+	-webkit-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+#fun.wrap .text-box .btn_pc {
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 3;
+	order: 3;
+}
+@media screen and (max-width:700px) {
+#fun.wrap .photo-box {
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 2;
+   order: 2;
+ }
+}
+@media screen and (max-width:700px) {
+#fun.wrap .text-box {
+   -webkit-box-ordinal-group: 1;
+   -ms-flex-order: 1;
+   order: 1;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+/* footer
+----------------------------------------------------------- */
+.footer{
+	max-width: 960px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+}
+@media screen and (max-width: 640px){
+.footer{
+	max-width: 640px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	/*padding-top:100px;*/
+}
+}
+.footer_logo{
+	padding-top: 30px;
+	text-align: center;
+}
+.copylight{
+	padding-top: 30px;
+	text-align: center;
+}
