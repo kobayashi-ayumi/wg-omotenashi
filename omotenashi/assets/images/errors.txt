@@ -1,2 +1,0 @@
-[11/21/2018, 4:58:00 PM] layer "button_a.png": Duplicate path: button_a.png
-[11/21/2018, 4:58:00 PM] layer "logo.png": Duplicate path: logo.png
