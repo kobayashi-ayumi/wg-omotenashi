@@ -30,6 +30,15 @@ body{
 	min-height: 500px;
 	position: relative;
 }
+	@media screen and (max-width: 0px){
+		.header_inner{
+			height: 55vh;
+			max-height: 800px;
+			min-height: 700px;
+		}
+	}
+
+
 .header_logo {
 	position: absolute;
 	top: 0;
@@ -58,24 +67,22 @@ body{
 }
 .header_menu ul li{
 	list-style: none;
-	margin: 0 12px;
+	margin: 0 7px;
 	display: inline-block;
 	vertical-align: top;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 750px){
 	.header_hello{
 		height: 192px;
 		width: 78px;
 	}
 	.header_menu {
 		position: absolute;
-		top: 300px;
+		top: 350px;
 		width: 100%;
 		text-align: center;
 	}
 }
-
-
 
 /* 説明
 ----------------------------------------------------------- */
@@ -92,10 +99,11 @@ body{
 	margin: 0 auto;
 	font-size: 19px;
 }
-	@media screen and (max-width: 500px){
+	@media (orientation: landscape) and (max-width: 500px){
 		.tate_setsumei p{
-			line-height: 2;
-			font-size: 17px;
+			line-height: 1.5;
+			font-size: 16px;
+			width: 100%;
 		}
 	}
 
@@ -104,33 +112,38 @@ body{
 .mainvisual{
 	margin: 0 auto;
 	max-width: 50%;
+	min-width: 40%;
 }
-	@media screen and (max-width: 640px){
+	@media screen and (max-width: 600px){
 		.mainvisual{
 			margin: 0 auto;
 			max-width: 100%;
+			margin-top: 40vh;
 		}
 	}
 
 .mainvisual img{
 	width: 100%;
 }
-	@media screen and (max-width: 640px){
+	@media screen and (max-width: 600px){
 		.mainvisual img{
-			max-width: 500px;
+			/*max-width: 500px;*/
 			margin: 0 auto;
 			width: 100%;
 		}
 	}
 
 
-/* 喜び
------------------------------------------------------------ */
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
 .wrap-all {
 	width: 100%; margin:0 auto;
  }
-}
+}*/
+
+.container {
+	width: 100%;
+	 margin:0 auto;
+ }
 
 /* 全感情共通になってます。 */
 .wrap, .wrap .text-box {
@@ -176,11 +189,18 @@ body{
 .wrap .text-box .tate {
 	width: 60%;
 	height: 40%;
-	line-height: 2.5;
+	line-height: 2.2;
 	-ms-writing-mode: tb-rl;
 	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
  }
+ 	@media screen and (max-width:700px) {
+		.wrap .text-box .tate {
+			height: 70%;
+			line-height: 1.8;
+		}
+	}
+
 /* テキスト箱の環状部分 */
 .wrap .text-box .menu {
 	width: 40%;
@@ -188,8 +208,8 @@ body{
 
 /* ボタンの部分 [PC表示] */
 .wrap .text-box .btn_pc {
-	width: 100%;
-	text-align: center;
+	width: 85%;
+	margin: 0 auto;
 }
 	@media screen and (max-width:700px) {
 		.wrap .btn_pc {
@@ -204,6 +224,7 @@ body{
 	@media screen and (max-width:700px) {
 		.wrap .btn_sp {
 			display: block;
+			margin-top: 10px;
 		}
 	}
 
@@ -212,6 +233,7 @@ body{
 ========================================================*/
 #joy {
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 #joy.wrap .photo-box {
 	-webkit-box-ordinal-group: 2;
@@ -236,6 +258,7 @@ body{
    -webkit-box-ordinal-group: 1;
    -ms-flex-order: 1;
    order: 1;
+   height: 310px;
  }
 }
 
@@ -243,10 +266,7 @@ body{
 ========================================================*/
 #angry {
 	padding-top: 50px;
-}
-#angry.wrap .photo-box {
-}
-#angry.wrap .text-box {
+	padding-bottom: 50px;
 }
 #angry.wrap .text-box .tate {
 	-webkit-box-ordinal-group: 2;
@@ -275,6 +295,7 @@ body{
    -webkit-box-ordinal-group: 1;
    -ms-flex-order: 1;
    order: 1;
+   height: 310px;
  }
 }
 
@@ -282,6 +303,7 @@ body{
 ========================================================*/
 #sad {
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 #sad.wrap .photo-box {
 	-webkit-box-ordinal-group: 2;
@@ -306,6 +328,7 @@ body{
    -webkit-box-ordinal-group: 1;
    -ms-flex-order: 1;
    order: 1;
+   height: 310px;
  }
 }
 
@@ -313,10 +336,7 @@ body{
 ========================================================*/
 #fun {
 	padding-top: 50px;
-}
-#fun.wrap .photo-box {
-}
-#fun.wrap .text-box {
+	padding-bottom: 50px;
 }
 #fun.wrap .text-box .tate {
 	-webkit-box-ordinal-group: 2;
@@ -345,17 +365,9 @@ body{
    -webkit-box-ordinal-group: 1;
    -ms-flex-order: 1;
    order: 1;
+   height: 310px;
  }
 }
-
-
-
-
-
-
-
-
-
 
 /* footer
 ----------------------------------------------------------- */
