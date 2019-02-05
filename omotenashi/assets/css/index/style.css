@@ -13,7 +13,7 @@ html{
 ----------------------------------------------------------- */
 body{
 	/*margin-left: 40px;*/
-	background-image: url(../images/index/bg.jpg);
+	background-image: url(../../images/index/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -48,7 +48,7 @@ body{
 .header_logo img{
 }
 .header_hello{
-	background-image: url("../images/index/hello.png");
+	background-image: url("../../images/index/hello.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 100% 0;
