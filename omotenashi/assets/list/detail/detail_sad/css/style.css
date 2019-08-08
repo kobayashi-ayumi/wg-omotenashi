@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+img{
+	border:none;
+}
+
+html{
+	font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 17px;
+}
+
+/* 全体にかかる
+----------------------------------------------------------- */
+body{
+	/*margin-left: 40px;*/
+	background-image: url(../../../../images/index/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 60px;
+}
+	@media screen and (max-width: 600px){
+		body{
+			margin: 20px;
+		}
+	}
+
+
+/* ヘッダー
+----------------------------------------------------------- */
+.header_inner{
+	position: relative;
+	height: 35vh;
+	max-height: 400px;
+	min-height: 370px;
+	position: relative;
+}
+	@media screen and (max-width: 750px){
+		.header_inner{
+			height: 45vh;
+			max-height: 500px;
+			min-height: 450px;
+		}
+	}
+
+
+.header_logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.header_logo img{
+}
+.header_hello{
+	background-image: url("../../images/index/hello.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 0;
+	position: absolute;
+	top:0;
+	right: 0;
+	text-indent: -9999px;
+	height: 385px;
+	width: 156px;
+}
+
+.header_menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header_menu ul li{
+	list-style: none;
+	margin: 0 7px;
+	display: inline-block;
+	vertical-align: top;
+}
+@media screen and (max-width: 750px){
+	.header_hello{
+		height: 192px;
+		width: 78px;
+	}
+	.header_menu {
+		position: absolute;
+		top: 350px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+/* mainvisual
+----------------------------------------------------------- */
+.mainvisual{
+	text-align: center;
+}
+	@media screen and (max-width: 600px){
+		.mainvisual{
+			margin: 0 auto;
+			max-width: 100%;
+			min-width: 70%;
+		}
+	}
+
+.mainvisual img{
+	width: 100%;
+	max-width: 1000px;
+}
+	@media screen and (max-width: 600px){
+		.mainvisual img{
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+
+
+.container {
+	width: 100%;
+	 margin:0 auto;
+ }
+
+
+/* 説明
+----------------------------------------------------------- */
+.setsumei{
+	margin-top: 10px;
+	width: 100%;
+}
+.setsumei p{
+	line-height: 2;
+	font-size: 19px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+	@media screen and (max-width: 600px){
+		.setsumei p{
+			line-height: 2;
+			font-size: 16px;
+			width: 100%;
+		}
+	}
+
+.setsumei p .emotion-btn{
+	text-align: center;
+	max-width: 400px;
+}
+	@media screen and (max-width: 600px){
+		.emotion-btn{
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+
+
+/* 全感情共通部分
+========================================================*/
+.wrap, .wrap .text-box {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+
+
+/* 感情の箱の共通部分
+========================================================*/
+
+
+/* ボタンの部分 [SP表示] */
+.list-btn_sp {
+	display: none;
+}
+	@media screen and (max-width:700px) {
+		.list-btn_sp {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
+	@media screen and (max-width:700px) {
+		.list-btn_sp img{
+			display: block;
+			margin: 10px auto 30px;
+			width: 100%;
+		}
+	}
+
+
+
+/* footer
+----------------------------------------------------------- */
+.footer{
+	max-width: 960px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+}
+@media screen and (max-width: 640px){
+.footer{
+	max-width: 640px;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+	/*padding-top:100px;*/
+}
+}
+.footer_logo{
+	padding-top: 30px;
+	text-align: center;
+}
+.copylight{
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+/*20190329~*/
+
+/* 共通部分
+----------------------------------------------------------- */
+
+span .slash-red{
+	color: #8a040b;
+	font-weight: bold;
+}
+
+.ttl{
+	margin: 4% 0;
+}
+
+	@media screen and (max-width:600px) {
+	.ttl {
+		width: 80%;
+	 }
+	}
+
+.parent-date{
+	text-align: center;
+}
+
+.parent-date .date{
+	width: 100%;
+	max-width: 1000px;
+}
+
+.kansou p{
+	width: 80%;
+	line-height: 1.6;
+	font-size: 20px;
+	margin: auto;
+}
+	@media screen and (max-width:600px) {
+		.kansou p {
+			font-size: 16px;
+			margin: auto;
+	 }
+	}
+
+.store-detail-inner{
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 4px 4px #cdceca;
+	/*width: 100%;*/
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+.store-detail-inner dl{
+	text-align: left;
+}
+
+.store-detail-inner dt{
+	font-size: 30px;
+	border-bottom: 2px solid #333;
+	margin:10px 0;
+	padding:10px;
+	display: inline-block;
+}
+	@media screen and (max-width:600px) {
+		.store-detail-inner dt {
+			font-size: 25px;
+	 }
+	}
+
+.store-detail-inner dd{
+	font-size: 25px;
+	line-height: 1.5;
+}
+		@media screen and (max-width:600px) {
+		.store-detail-inner dd {
+			font-size: 20px;
+	 }
+	}
